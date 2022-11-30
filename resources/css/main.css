@@ -22,3 +22,16 @@
   footer{
     margin: 1rem;
   }
+
+  img.u-photo { 
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; 
+  }
+
+
+  ul { padding: 0; list-style: none; }
+
+  main{
+    margin-left: 5em;
+  }
