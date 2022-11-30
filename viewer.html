@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+<title> viewer</title>
+    </head>
+<body>
+    <script>
+        $.ajax({
+            type: "POST",
+            url: "https://thetrash.altervista.org/feedback/get_feedback.php",
+        data: {"pass_key": "test" },
+            success: function(msg, status, jqXHR){
+                var tbody = "";
+                msg.forEach(
+                    
+                    function(row){
+			            tbody += "<tr><td>"+row.articolo+"</td><td>"+row.like+"</td></tr>";
+                        $("#viewer").html(tbody);
+                        console.log(tbody)
+		});
+            },
+            error: function(jqXHR, status, errorThrown){
+                $("#response").html(" errore! "+  status + " " +  errorThrown);
+            }
+	});
+    </script>
+
+<table id="viewer">
+
+</table>
+
+</body>
+</html> 
