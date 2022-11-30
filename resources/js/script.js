@@ -1,10 +1,18 @@
+$( document ).ready(function() {
+  clicked = $.cookie("night-city");
+  if(clicked == 1){
+    $("#like_button").attr('class', 'fa-solid fa-heart');
+    $("#response").html(" Grazie!");
+  }
+});
 
-clicked = 0
+
 $("#like_button").click(function(){
-    if(clicked == 0){
+    if(clicked != ""){
         $(this).attr('class', 'fa-solid fa-heart');
         clicked = 1;
         add_feedback();
+        $.cookie("night-city", 1);
     }
   });
 
