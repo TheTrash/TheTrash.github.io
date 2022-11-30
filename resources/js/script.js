@@ -11,7 +11,7 @@ $("#like_button").click(function(){
 function add_feedback(){
     $.ajax({
 		type: "POST",
-		url: "http://thetrash.altervista.org/feedback/add_feedback.php",
+		url: "https://thetrash.altervista.org/feedback/add_feedback.php",
         
         data: {"article": "night-city" },
 		success: function(msg, status, jqXHR){
