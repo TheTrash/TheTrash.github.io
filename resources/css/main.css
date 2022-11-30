@@ -9,6 +9,7 @@
   body {
     line-height: 1.6;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 100%;
     text-align: left;
     margin: 1rem auto;
     min-height: 90vh;

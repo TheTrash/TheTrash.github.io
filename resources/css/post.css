@@ -1,16 +1,24 @@
 @media only screen and (max-width: 1920px) {
-    .body_text{
+    .content{
         padding-left: 10rem;
         padding-right: 10rem;
         margin-top: 4rem;
     }
+    .title{
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
  }
  
  @media only screen and (max-width: 600px) {
-    .body_text{
+    .content{
         padding-left: 4rem;
         padding-right: 4rem;
         margin-top: 2rem;
+    }
+    .title{
+        margin-top: 2rem;
+        font-size: 1rem;
     }
  }
 
