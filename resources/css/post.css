@@ -6,9 +6,11 @@
         font-size: 1.2rem;
     }
     .title{
-        font-style: bold;
+        font-weight: bold;
         margin-top: 2rem;
-        font-size: 5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 2rem;
     }
  }
  
@@ -17,12 +19,13 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-top: 2rem;
-        font-size: 0.9rem;
     }
     .title{
-        font-style: bold;
+        font-weight: bold;
         margin-top: 2rem;
-        font-size: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 2rem;
     }
  }
 
