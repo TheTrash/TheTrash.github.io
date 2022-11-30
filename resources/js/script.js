@@ -13,12 +13,11 @@ function add_feedback(){
 		type: "POST",
 		url: "https://thetrash.altervista.org/feedback/add_feedback.php",
     data: {"article": "night-city" },
-
 		success: function(msg, status, jqXHR){
             $("#response").html(" Grazie!");
 		},
 		error: function(jqXHR, status, errorThrown){
-            $("#response").html(" errore!");
+            $("#response").html(" errore! "+  status + " " +  errorThrown);
 		}
 	});
 }
