@@ -21,7 +21,7 @@
         margin-top: 2rem;
     }
     .title{
-        font-weight: bold;
+        
         margin-top: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -29,11 +29,24 @@
     }
  }
 
-
+.title{
+    font-weight: bold;
+    align-self: center;
+}
 
 .top_image{
     max-width: 90%;
     height: auto;
     margin-left: 3rem;
     margin-right: 3rem;
+}
+.quote{
+    font-weight: bold;
+    font-style: italic;
+    align-self: center;
+    opacity: 50%;
+}
+
+.feedback{
+    justify-content: right;
 }
