@@ -10,8 +10,14 @@
 
 <body>
   <!-- Reference for representative h-card properties: https://microformats.org/wiki/h-card -->
-  <main class="h-card" rel="author">
-      <img class="u-photo" alt="My profile photo" src="resources/images/profile_pic.jpg" />
+  <main  rel="author">
+    <div class="h-card">
+      <img class="u-photo" alt="My profile photo" src="resources/images/profile_pic.jpg" /><br />
+      <div class="icon">
+        <a class="u-url" href="https://github.com/thetrash" rel="me"><i class="fa-brands fa-github"></i></a>
+        <a class="u-url" href="https://t.me/thetrash" rel="me"><i class="fa-brands fa-telegram"></i></a>
+        <a class="u-url" href="https://twitter.com/mattiaaa95" rel="me"><i class="fa-brands fa-twitter"></i></a>
+      </div>
     <h1>
       I'm <span class="p-name">Mattia Polticchia</span>.
     </h1>
@@ -21,15 +27,20 @@
       I love videogames, programming, manga & anime and other nerd stuff.
     </p>
 
-    <ul>
+
       <!-- Update or remove the below links!
         Replace _mygithubid_ with your GitHub username -->
-      <li><i class="fa-brands fa-github"></i> <a class="u-url" href="https://github.com/thetrash" rel="me">@TheTrash</a></li>
-      <li><i class="fa-brands fa-telegram"></i> <a class="u-url" href="https://t.me/thetrash" rel="me">@TheTrash</a></li>
-      <!-- Replace _mytwitterid_ with your Twitter username -->
-      <li><i class="fa-brands fa-twitter"></i> <a class="u-url" href="https://twitter.com/mattiaaa95" rel="me">@mattiaaa95</a></li>
-    </ul>
+
+
+  </div>
+    <div class="h-card blog-space">
+      <h3>Blog Post</h3>
+      <ul>
+        <li><a href="night-city.html">Cosa Bolle in pentola a Night City?</a></li>
+      </ul>
+    </div>
   </main>
+
 
 </body>
 

@@ -13,9 +13,6 @@
     text-align: left;
     margin: 1rem auto;
     min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: left;
   }
 
@@ -33,5 +30,13 @@
   ul { padding: 0; list-style: none; }
 
   main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .h-card{
     margin-left: 5em;
+  }
+  .icon{
+    margin-left: 70px;
   }
