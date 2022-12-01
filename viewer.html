@@ -9,11 +9,15 @@
 <title> viewer</title>
     </head>
 <body>
+    <input type="password" id="password" >
+    <input type="button" id="button" value="see statistics" >
     <script>
-        $.ajax({
+        $("#button").on("click", function(){
+            var password = $("#password").val();
+            $.ajax({
             type: "POST",
             url: "https://thetrash.altervista.org/feedback/get_feedback.php",
-        data: {"pass_key": "test" },
+        data: {"pass_key": password },
             success: function(msg, status, jqXHR){
                 var tbody = "";
                 msg.forEach(
@@ -25,14 +29,17 @@
 		});
             },
             error: function(jqXHR, status, errorThrown){
-                $("#response").html(" errore! "+  status + " " +  errorThrown);
+                $("#response").html(status + " " +  errorThrown);
             }
 	});
+        });
+
     </script>
 
 <table id="viewer">
 
 </table>
+<span id="response"></span>
 
 </body>
 </html> 
