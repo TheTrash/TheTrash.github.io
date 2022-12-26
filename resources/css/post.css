@@ -43,10 +43,13 @@
     font-weight: bold;
     font-style: italic;
     align-self: center;
-    opacity: 50%;
     font-size: 1.5rem;
 }
 
 .feedback{
     justify-content: right;
+}
+
+.center{
+    align-self: center;
 }
