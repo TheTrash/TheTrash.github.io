@@ -1,11 +1,17 @@
 @media (prefers-color-scheme: dark) {
     html { background-color: #333333; color: #fbfbfb; }
     a { color: #ca8465; }
+    b { color: white; }
+    .quote { opacity: 75%; }
+
   }
   @media (prefers-color-scheme: light) {
     html { background-color: #fbfbfb; color: #333333; }
     a { color: #ca8465; }
+    .quote { opacity: 50%; }
+    
   }
+  
   body {
     line-height: 1.6;
     font-family: system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
@@ -39,4 +45,8 @@
   }
   .icon{
     margin-left: 70px;
+  }
+
+  .p-note{
+    margin-right: 2em;
   }
