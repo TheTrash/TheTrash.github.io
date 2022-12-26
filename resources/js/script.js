@@ -20,7 +20,7 @@ function add_feedback(){
     $.ajax({
 		type: "POST",
 		url: "https://thetrash.altervista.org/feedback/add_feedback.php",
-    data: {"article": article_name },
+    data: { "article": article_name },
 		success: function(msg, status, jqXHR){
             $("#response").html(" Grazie!");
 		},
