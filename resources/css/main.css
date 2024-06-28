@@ -1,19 +1,20 @@
 @media (prefers-color-scheme: dark) {
-    html { background-color: #333333; color: #fbfbfb; }
+    html { background-color: #121212; color: #fbfbfb; }
     a { color: #ca8465; }
     b { color: white; }
     .quote { opacity: 75%; }
+    .italic_enfasy { opacity: 75%; }
 
   }
   @media (prefers-color-scheme: light) {
     html { background-color: #fbfbfb; color: #333333; }
     a { color: #ca8465; }
     .quote { opacity: 50%; }
-    
+    .italic_enfasy { opacity: 50%; }
   }
   
   body {
-    line-height: 1.6;
+    line-height: 1.5;
     font-family: system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
     font-size: 100%;
     text-align: left;
