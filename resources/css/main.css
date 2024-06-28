@@ -4,13 +4,17 @@
     b { color: white; }
     .quote { opacity: 75%; }
     .italic_enfasy { opacity: 75%; }
+    body { font-weight: 350; }
+    hr {color:antiquewhite}
 
   }
   @media (prefers-color-scheme: light) {
-    html { background-color: #fbfbfb; color: #333333; }
+    html { background-color: #fbfbfb; color: #000; }
     a { color: #ca8465; }
     .quote { opacity: 50%; }
-    .italic_enfasy { opacity: 50%; }
+    .italic_enfasy { opacity: 75%; color: #333; }
+    body { font-weight: 500; }
+    hr {color: #000}
   }
   
   body {
@@ -51,3 +55,4 @@
   .p-note{
     margin-right: 2em;
   }
+
