@@ -8,8 +8,8 @@
     .title{
         font-weight: bold;
         margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 6rem;
+        margin-right: 6rem;
         font-size: 2rem;
     }
  }
@@ -21,7 +21,6 @@
         margin-top: 2rem;
     }
     .title{
-        
         margin-top: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -44,7 +43,7 @@
     font-weight: bold;
     font-style: italic;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .italic_enfasy{
