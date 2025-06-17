@@ -62,7 +62,6 @@
     /* margin-right: auto; */
     max-width: 400px; /* Mantieni questo per la leggibilità */
     /* Puoi aggiungere un padding-left se vuoi un leggero rientro interno al testo, ma non è un margine */
-    padding-left: 5em; /* Questo aggiunge uno spazio interno per allinearlo con la h-card */
   }
 
   hr {
