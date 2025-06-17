@@ -19,12 +19,12 @@
   
   body {
     line-height: 1.5;
-    font-family: system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
     font-size: 100%;
     text-align: left;
     margin: 1rem auto;
     min-height: 90vh;
-    align-items: left;
   }
 
   footer{
@@ -43,19 +43,55 @@
   main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start; /* Questo assicura che gli elementi figli siano allineati a sinistra */
+    width: 100%;
   }
   .h-card{
-    margin-left: 5em;
+    margin-left: 5em; /* Margine sinistro per staccare dal bordo */
+    margin-right: auto;
+    text-align: left;
   }
   .icon{
-    margin-left: 70px;
+    margin-left: 0%;
   }
 
   .p-note{
-    margin-right: 2em;
+    /* Rimuovi i margini specifici per allinearlo con la h-card */
+    /* margin-left: 5em; */
+    /* margin-right: auto; */
+    max-width: 400px; /* Mantieni questo per la leggibilità */
+    /* Puoi aggiungere un padding-left se vuoi un leggero rientro interno al testo, ma non è un margine */
+    padding-left: 5em; /* Questo aggiunge uno spazio interno per allinearlo con la h-card */
   }
 
   hr {
     border-bottom : none;
   }
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    body {
+        text-align: left; /* Center text and inline elements */
+    }
+
+    main {
+        align-items: center; /* Center flex items horizontally */
+        margin: 0 auto; /* Ensure main container is centered */
+        width: 95%; /* Adjust width for better fit on small screens */
+    }
+
+    .h-card,
+    .icon,
+    .p-note {
+        margin-left: auto; /* Remove fixed left margin */
+        margin-right: auto; /* Remove fixed right margin */
+        width: 100%; /* Allow elements to take full width */
+    }
+
+    /* Optional: Further adjust specific elements if needed */
+    img.u-photo {
+        display: block; /* Make image a block element */
+        margin: 0 auto; /* Center the image */
+    }
+}
