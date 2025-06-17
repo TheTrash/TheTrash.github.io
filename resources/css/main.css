@@ -47,6 +47,7 @@
     align-items: flex-start; /* Questo assicura che gli elementi figli siano allineati a sinistra */
     width: 100%;
   }
+
   .h-card{
     margin-left: 5em; /* Margine sinistro per staccare dal bordo */
     margin-right: auto;
@@ -69,7 +70,7 @@
   }
 
 /* Mobile-specific adjustments */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     body {
         text-align: left; /* Center text and inline elements */
     }
