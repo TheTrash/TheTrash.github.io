@@ -66,3 +66,9 @@ hr.separator{
     margin-right: 1em;
     margin-left: 1em;
   }
+
+  .content ul {
+    list-style: inside;
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
