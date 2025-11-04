@@ -1,0 +1,158 @@
+:root{
+  --surface: #fff;
+  --surface-border: #e5e7eb;
+  --surface-shadow: rgba(15, 23, 42, 0.08);
+  --surface-hover: #f9fafb;
+  --icon-border: #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --surface: #111317;
+    --surface-border: rgba(148, 163, 184, 0.25);
+    --surface-shadow: rgba(8, 11, 19, 0.55);
+    --surface-hover: #161a22;
+    --icon-border: rgba(148, 163, 184, 0.35);
+  }
+}
+
+main.home{
+  max-width: min(960px, calc(var(--measure) + 240px));
+  display: grid;
+  gap: clamp(32px, 6vw, 64px);
+  padding-block: clamp(48px, 8vw, 104px);
+}
+
+.profile-card{
+  display: grid;
+  gap: clamp(20px, 3vw, 32px);
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--surface-border);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: 0 24px 64px var(--surface-shadow);
+  text-align: center;
+}
+
+.profile-card img.u-photo{
+  width: clamp(144px, 12vw, 200px);
+  height: clamp(144px, 12vw, 200px);
+  border-radius: 50%;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.profile-card h1{
+  margin: 0;
+  font-size: clamp(30px, 1.8vw + 22px, 44px);
+  line-height: 1.1;
+}
+
+.profile-card .p-note{
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.02em;
+}
+
+.social-links{
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid var(--icon-border);
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-links a:hover{
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--icon-border) 60%, transparent);
+  background: var(--surface-hover);
+  box-shadow: 0 16px 32px var(--surface-shadow);
+}
+
+.home-section{
+  display: grid;
+  gap: clamp(18px, 3vw, 28px);
+}
+
+.home-section h2{
+  margin: 0;
+  font-size: clamp(22px, 1.4vw + 20px, 32px);
+}
+
+.home-section p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 1em;
+}
+
+.post-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.post-list li{
+  margin: 0;
+}
+
+.post-list a{
+  display: block;
+  padding: 0.95rem 1.1rem;
+  border-radius: 16px;
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-list a:hover{
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--surface-border) 60%, transparent);
+  background: var(--surface-hover);
+  box-shadow: 0 20px 40px var(--surface-shadow);
+}
+
+.post-list a span{
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.85em;
+}
+
+.site-footer{
+  margin-top: clamp(32px, 6vw, 96px);
+  padding-inline: clamp(16px, 4vw, 32px);
+}
+
+@media (min-width: 720px){
+  .profile-card{
+    grid-template-columns: auto 1fr;
+    justify-items: flex-start;
+    text-align: left;
+    align-items: center;
+  }
+
+  .profile-card img.u-photo{
+    margin-right: clamp(16px, 4vw, 28px);
+  }
+
+  .profile-card .social-links{
+    justify-content: flex-start;
+  }
+}
